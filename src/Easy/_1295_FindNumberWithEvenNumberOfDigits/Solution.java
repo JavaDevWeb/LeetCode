@@ -4,6 +4,9 @@ package Easy._1295_FindNumberWithEvenNumberOfDigits;
 *   Cho mot mang so nguyen nums, tra ve co bao nhieu trong so chung chua so chu so chan
 *   VD1: nums = [555, 901, 482, 1771] => Chi co 1771 la so chu so chan
 *   VD2: nums = [12,345,2,6,7896] => So 12 va 7896 la so chu so chan
+*   Cach lam:
+*       +) B1: Kiem tra a[i] co so luong chu so la chan => count tang len 1
+*       +) B2: Kiem tra so luong chu so cua 1 so (a[i])
 */
 public class Solution {
     public static int findNumber(int[] nums){
