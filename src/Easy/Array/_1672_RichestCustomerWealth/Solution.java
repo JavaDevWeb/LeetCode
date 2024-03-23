@@ -10,7 +10,7 @@ package Easy.Array._1672_RichestCustomerWealth;
 */
 
 public class Solution {
-    public int maximumWealth(int[][] accounts) {
+    public static int maximumWealth(int[][] accounts) {
         int soKhachHang = accounts.length;
         int soNganHang = accounts[0].length;
         int[] tongTaiSan = new int[soKhachHang];
@@ -25,7 +25,7 @@ public class Solution {
 
         int max = 0;
         for (int i = 0; i < soKhachHang; i++) {
-            System.out.println("Tong tai san khach hang " + i + " la: " + tongTaiSan[i]);
+            System.out.println("Tong tai san khach hang " + (i + 1) + " la: " + tongTaiSan[i]);
             if(tongTaiSan[i] > max) {
                 max = tongTaiSan[i];
             }
@@ -41,17 +41,14 @@ public class Solution {
         System.out.println("So hang: " + soHang);
         System.out.println("So cot: " + soCot);
 
-        System.out.println("So tien trong ngan hang la: ");
         for (int i = 0; i < soHang; i++) {
-            System.out.print("So tien cua khach hang " + (i + 1) + " la: ");
+            System.out.print("So tien trong ngan hang cua khach hang " + (i + 1) + " la: ");
             for (int j = 0; j < soCot; j++) {
                 System.out.print(accounts[i][j] + " ");
             }
             System.out.println();
         }
 
-        Solution solution = new Solution();
-        int maxWealth = solution.maximumWealth(accounts);
-        System.out.print("Khach hang co so tien lon nhat la: " + maxWealth);
+        System.out.print("Khach hang co so tien lon nhat la: " + maximumWealth(accounts));
     }
 }
