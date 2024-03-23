@@ -19,11 +19,46 @@ package Easy.String._13_RomanToInteger;
 *       + Dam bao rang s la mot so La Ma hop le trong khoang [1, 3999]
 */
 
+import java.util.Scanner;
+
 public class Solution {
     public static int romanToInt(String s) {
-        return 0;
+        int prev = 0; // So ben phai dang xet
+        int num = 0; // So dang xet
+        int ans = 0; // Dap an cuoi cung
+        char[] arr = s.toCharArray();
+
+        for(int i = arr.length - 1; i >= 0; i--) {
+            switch (arr[i]) {
+                case 'I':
+                    num = 1; break;
+                case 'V':
+                    num = 5; break;
+                case 'X':
+                    num = 10; break;
+                case 'L':
+                    num = 50; break;
+                case 'C':
+                    num = 100; break;
+                case 'D':
+                    num = 500; break;
+                case 'M':
+                    num = 1000; break;
+            }
+
+            if(num < prev) {
+                ans -= num;
+            } else {
+                ans += num;
+            }
+            prev = num;
+        }
+        return ans;
     }
     public static void main(String[] args) {
-
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Nhap so La Ma can chuyen: ");
+        String s = sc.nextLine();
+        System.out.print("So La Ma sau khi chuyen sang so nguyen la: " + romanToInt(s));
     }
 }
