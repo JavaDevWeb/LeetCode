@@ -5,6 +5,9 @@ package Easy.String._387_FirstUniqueInAString;
 *   Neu ko ton tai, tra ve -1.
 *   VD1: s = "leetcode" => l = 0
 *   VD2: s = "loveleetcode" => v = 2
+*   - Rang buoc:
+*       + 1 <= s.length <= 10^5
+*       + s chi bao gom cac chu cai Tieng Anh viet thuong
 */
 public class Solution {
     public static int firstUniqChar(String s) {

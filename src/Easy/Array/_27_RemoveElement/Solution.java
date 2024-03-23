@@ -10,6 +10,10 @@ package Easy.Array._27_RemoveElement;
 *       + Tra ve k
 *   VD1: nums = [3, 2, 1, 2, 5], val = 2 => nums = [3, 1, 5, _, _] => k = 3
 *   VD2: nums = [1, 2, 1, 3], val = 1 => nums =[2, 3, _, _] => k = 2
+*   - Rang buoc:
+*       + 0 <= nums.length <= 100
+*       + 0 <= nums[i] <= 50
+*       + 0 <= val <= 100
 */
 
 public class Solution {

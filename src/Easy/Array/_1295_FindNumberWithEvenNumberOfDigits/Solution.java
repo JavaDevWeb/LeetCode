@@ -1,9 +1,12 @@
 package Easy.Array._1295_FindNumberWithEvenNumberOfDigits;
 
 /*
-*   Cho mot mang so nguyen nums, tra ve co bao nhieu trong so chung chua so chu so chan
+*   - Cho mot mang so nguyen nums, tra ve co bao nhieu trong so chung chua so chu so chan
 *   VD1: nums = [555, 901, 482, 1771] => Chi co 1771 la so chu so chan
 *   VD2: nums = [12,345,2,6,7896] => So 12 va 7896 la so chu so chan
+*   - Rang buoc:
+*       + 1 <= nums.length <= 500
+*       + 1 <= nums[i] <= 10^5
 */
 public class Solution {
     public static int findNumber(int[] nums){

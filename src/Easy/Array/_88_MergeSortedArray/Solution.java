@@ -1,14 +1,19 @@
 package Easy.Array._88_MergeSortedArray;
 
 /*
-*   - Ban duoc cung cap hai mang so nguyen nums1 va nums2, duoc sap xep theo thu tu khong giam, cung hai so
+*   - Ban dc cung cap hai mang so nguyen nums1 va nums2, dc sap xep theo thu tu khong giam, cung hai so
 *   nguyen m va n, dai dien cho so phan tu trong nums1 va nums2 tuong ung
-*   - Hop nhat nums1 va nums2 thanh 1 mang duy nhat duoc sap xep theo thu tu khong giam
-*   - Mang duoc sap xep cuoi cung khong duoc tra lai boi ham, ma thay vao do duoc luu tru ben trong mang
+*   - Hop nhat nums1 va nums2 thanh 1 mang duy nhat dc sap xep theo thu tu khong giam
+*   - Mang dc sap xep cuoi cung khong duoc tra lai boi ham, ma thay vao do dc luu tru ben trong mang
 *   nums1. De lam dieu nay, nums1 co do dai la m + n, trong do m phan tu dau tien chi ra cac phan tu can
-*   duoc hop nhat, va n phan tu cuoi cung duoc dat thanh 0 va se duoc bo qua nums2 co do dai la n.
+*   dc hop nhat, va n phan tu cuoi cung dc dat thanh 0 va se dc bo qua nums2 co do dai la n.
 *   VD1: nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3 => nums = [1,2,2,3,5,6]
 *   VD2: nums1 = [1], m = 1, nums2 = [], n = 0 => nums = [1]
+*   - Rang buoc:
+*       + nums1.length == m + n
+*       + nums2.length == n
+*       + 0 <= m, n <= 200
+*       + -10^9 <= nums1[i], nums2[j] <= 10^9
 */
 
 public class Solution {
