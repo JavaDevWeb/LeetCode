@@ -15,7 +15,8 @@ package Easy.String._125_ValidPalindrome;
 public class Solution {
     public static boolean isPalindrome(String s) {
         if(s.length() <= 1) return true;
-        int st = 0, en = s.length() - 1;
+        int st = 0;
+        int en = s.length() - 1;
         while (st < en) {
             while (st < en && !Character.isLetterOrDigit(s.charAt(st))) st++;
             while (st < en && !Character.isLetterOrDigit(s.charAt(en))) en--;
