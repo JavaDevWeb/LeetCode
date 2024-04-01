@@ -60,7 +60,7 @@ public class Solution {
         ListNode newList = mergeTwoLists(null, L3);
         printLinkedList(newList);
 
-        ListNode newList1 = mergeTwoLists(n3, L3);
+        ListNode newList1 = mergeTwoLists(n1, L1);
         printLinkedList(newList1);
     }
 }
