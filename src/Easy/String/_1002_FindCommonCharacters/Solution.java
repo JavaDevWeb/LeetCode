@@ -18,7 +18,7 @@ import java.util.List;
 
 public class Solution {
     public static List<String> commonChars(String[] words) {
-        List<String> common_chars = new ArrayList();
+        List<String> common_chars = new ArrayList<>();
         int[] min_frequencies = new int[26];
         Arrays.fill(min_frequencies, Integer.MAX_VALUE);
         for(String current_string : words) {
